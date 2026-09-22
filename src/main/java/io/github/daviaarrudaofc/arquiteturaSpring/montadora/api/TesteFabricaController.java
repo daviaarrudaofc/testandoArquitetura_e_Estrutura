@@ -15,9 +15,11 @@ public class TesteFabricaController {
     @Autowired//->pede um objeto ao Spring
     // Injeta nesta variável um objeto Motor que já foi criado e gerenciado pelo Spring.
 
-    @Qualifier("motorTurbo")//-> especifica qual objeto usar quando existem vários Beans do mesmo tipo
+    //@Qualifier("motorTurbo")//-> especifica qual objeto usar quando existem vários Beans do mesmo tipo
+
     // Especifica qual Bean do tipo Motor o Spring deve injetar,
     // pois existem vários Beans do mesmo tipo.
+    @Eletrico
     private Motor motor;
 
     @PostMapping
